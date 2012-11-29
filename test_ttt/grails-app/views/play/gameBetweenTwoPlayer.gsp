@@ -42,12 +42,14 @@
                 }
                 setTimeout(updateMoves, 5000);
             } else if(${!game.gameRequest}){
-                document.newMoves.submit();
-                setTimeout(updateMoves, 10000);
+                setTimeout(reloadPage, 5000);
+
             }
 
         }
-
+        function reloadPage(){
+            document.newMoves.submit()
+        }
 
         window.onload = function () {
             if(${game.playerMove.username!=cUsername}){

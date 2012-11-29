@@ -8,7 +8,7 @@
     <g:javascript src='popup.js'/>
     <script type="text/javascript">
         function validateaform(thisForm){
-            if(thisForm.player1.value==''){
+            if(thisForm.otherPlayer.value==''){
                 alert("please select 1 player!")
                 return false;
             }
@@ -30,6 +30,9 @@
     </g:if>
     <div class="innerBody">
         <div class="leftPane">
+            <div class="leftPaneMenu">
+                Hi  ${player.username} !!
+            </div>
             <g:link controller="logout">
             <div class="leftPaneMenu">
                 Log Out
