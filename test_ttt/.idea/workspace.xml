@@ -104,7 +104,7 @@
       <file leaf-file-name="gameBetweenTwoPlayer.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/play/gameBetweenTwoPlayer.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="10" selection-start="6287" selection-end="6287" vertical-scroll-proportion="-6.7755103">
+            <state line="34" column="74" selection-start="1097" selection-end="1139" vertical-scroll-proportion="-4.0">
               <folding>
                 <marker date="1354196135106" expanded="true" signature="6149:6202" placeholder="{...}" />
               </folding>
@@ -124,7 +124,7 @@
       <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/play/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="21" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.8220859">
+            <state line="17" column="37" selection-start="550" selection-end="550" vertical-scroll-proportion="0.47443762">
               <folding />
             </state>
           </provider>
@@ -180,8 +180,8 @@
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/play/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/play/gameBetweenTwoPlayer.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/play/index.gsp" />
       </list>
     </option>
   </component>
@@ -386,6 +386,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="damyant" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -801,15 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/play/gameBetweenTwoPlayer.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="10" selection-start="6287" selection-end="6287" vertical-scroll-proportion="-6.7755103">
-          <folding>
-            <marker date="1354196135106" expanded="true" signature="6149:6202" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/damyant/PlayController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="387" selection-end="387" vertical-scroll-proportion="-14.043478">
@@ -817,9 +830,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/play/gameBetweenTwoPlayer.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="74" selection-start="1097" selection-end="1139" vertical-scroll-proportion="-4.0">
+          <folding>
+            <marker date="1354196135106" expanded="true" signature="6149:6202" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/play/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="21" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.8220859">
+        <state line="17" column="37" selection-start="550" selection-end="550" vertical-scroll-proportion="0.47443762">
           <folding />
         </state>
       </provider>
