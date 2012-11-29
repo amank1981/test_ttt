@@ -1,0 +1,534 @@
+html * {
+    margin: 0;
+    /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
+}
+
+/* GENERAL */
+
+.spinner {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font: 11px verdana, arial, helvetica, sans-serif;
+}
+#grailsLogo {
+    padding:20px;
+}
+
+a:link, a:visited, a:hover {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1 {
+    color: #48802c;
+    font-weight: normal;
+    font-size: 16px;
+    margin: .8em 0 .3em 0;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+input, select, textarea {
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    font: 11px verdana, arial, helvetica, sans-serif;
+    margin: 2px 0;
+    padding: 2px 4px;
+}
+select {
+    padding: 2px 2px 2px 0;
+}
+textarea {
+    width: 250px;
+    height: 150px;
+    vertical-align: top;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid #b2d1ff;
+}
+
+.body {
+    float: left;
+    margin: 0 15px 10px 15px;
+}
+
+/* NAVIGATION MENU */
+
+.nav {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-style: solid none solid none;
+    margin-top: 5px;
+    padding: 7px 12px;
+}
+
+.menuButton {
+    font-size: 10px;
+    padding: 0 5px;
+}
+.menuButton a {
+    color: #333;
+    padding: 4px 6px;
+}
+.menuButton a.home {
+    background: url(../images/skin/house.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+.menuButton a.list {
+    background: url(../images/skin/database_table.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+.menuButton a.create {
+    background: url(../images/skin/database_add.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+
+/* MESSAGES AND ERRORS */
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px
+}
+
+div.errors {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;
+}
+div.errors li {
+    background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+td.errors textarea {
+    border: 1px solid red;
+}
+
+/* TABLES */
+
+table {
+    border: 1px solid #ccc;
+    width: 100%
+}
+tr {
+    border: 0;
+}
+td, th {
+    font: 20px verdana, arial, helvetica, sans-serif;
+    line-height: 12px;
+    padding: 5px 6px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background: #fff url(../images/skin/shadow.jpg);
+    color: #666;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 2px 6px;
+}
+th a:link, th a:visited, th a:hover {
+    color: #333;
+    display: block;
+    font-size: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+th.asc a, th.desc a {
+    background-position: right;
+    background-repeat: no-repeat;
+}
+th.asc a {
+    background-image: url(../images/skin/sorted_asc.gif);
+}
+th.desc a {
+    background-image: url(../images/skin/sorted_desc.gif);
+}
+
+.odd {
+    background: #f7f7f7;
+}
+.even {
+    background: #fff;
+}
+
+/* LIST */
+
+.list table {
+    border-collapse: collapse;
+}
+.list th, .list td {
+    border-left: 1px solid #ddd;
+}
+.list th:hover, .list tr:hover {
+    background: #b2d1ff;
+}
+
+/* PAGINATION */
+
+.paginateButtons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-top: 0;
+    color: #666;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+.paginateButtons a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
+}
+
+/* DIALOG */
+
+.dialog table {
+    padding: 5px 0;
+}
+
+.prop {
+    padding: 5px;
+}
+.prop .name {
+    text-align: left;
+    width: 15%;
+    white-space: nowrap;
+}
+.prop .value {
+    text-align: left;
+    width: 85%;
+}
+
+/* ACTION BUTTONS */
+
+.buttons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.buttons input {
+    background: #fff;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 3px;
+    overflow: visible;
+    padding: 2px 6px;
+}
+.buttons input.delete {
+    background: transparent url(../images/skin/database_delete.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.edit {
+    background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.save {
+    background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+/*--------------Custom CSS----------------------*/
+
+
+#backgroundPopup {
+    display: none;
+    position: fixed;
+    _position: absolute; /* hack for internet explorer 6*/
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    border: 1px solid #cecece;
+    z-index: 1;
+}
+
+#popupContact {
+    display: none;
+    position: fixed;
+    _position: absolute; /* hack for internet explorer 6*/
+    background: #f9f9f9;
+    border: 5px solid #D4D4D4;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 2;
+    width:400;
+    height:250;
+    font-size: 20px;
+}
+
+#popupContact h1 {
+    text-align: left;
+    border-bottom: 2px solid #D3D3D3;
+    font-size: 30px;
+    font-family: Geneva, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding-left: 6px;
+    margin: 0px;
+}
+
+#popupContactClose {
+    font-size: 14px;
+    line-height: 14px;
+    right: 6px;
+    top: 4px;
+    position: absolute;
+    color: #6fa5fd;
+    font-weight: 700;
+    display: block;
+}
+
+.header{
+    border: 5px solid black;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 95%;
+    height: 50px;
+    background-color: #ccccff;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.greetings{
+    font-size: 20px;
+    color: green;
+}
+
+.innerBody{
+    border: 5px solid #000000;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 100%;
+    height: 400px;
+    margin: 2px;
+}
+.gameRequest{
+    border: 5px solid #000000;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 80%;
+    height: 40px;
+    margin: 2px;
+    font-size: 25px;
+    background-color: #ffe944;
+    font-weight: normal;
+    color: black;
+}
+.gameRequest:hover{
+   background-color: #21ffb7;
+   cursor: pointer;
+}
+
+.leftPane{
+    /*border: 5px solid #000000;
+    -moz-border-radius: 50px;
+    border-radius: 50px;*/
+    width: 45%;
+    height: 95%;
+    margin: 2px;
+    float: left;
+}
+
+.leftPaneMenu{
+    border: 5px solid #000000;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 90%;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: normal;
+    color: black;
+    background-color: #ffcccc;
+}
+
+.leftPaneMenu:hover {
+    background-color: #00cc00;
+}
+
+.leftPaneMenuLogin{
+    border: 5px solid #000000;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 90%;
+    height: 250px;
+    margin: 15px;
+    float: left;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: rgba(68, 78, 87, 0.40);
+}
+
+.rightPane{
+    /*border: 5px solid #000000;
+    -moz-border-radius: 50px;
+    border-radius: 50px;*/
+    width: 49%;
+    height: 95%;
+    margin: 2px;
+    float: right;
+    padding: 10px;
+}
+
+.tttMain{
+    border: 5px solid black;
+    width: 90%;
+    height: 600px;
+    margin: 5px;
+}
+.tttMainLeft{
+    float: left;
+    border: 2px solid black;
+    width: 34%;
+    height: 100%;
+}
+.tttMainRight{
+    float: right;
+    border: 2px solid black;
+    width: 65%;
+    height: 100%
+}
+
+.playerDetails{
+    width: 90%;
+    height: 100px;
+    border: 5px solid #000000;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin: 5px;
+    text-align: left;
+    padding: 10px;
+}
+
+.newGame{
+    width: 90%;
+    height: 30px;
+    border: 5px solid #000000;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin: 5px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.newGame:hover{
+    background-color: #999999;
+}
+
+.pdLeft{
+    float: left;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.pdRight{
+    float: left;
+    width: 45%;
+}
+
+.tttMainView{
+    margin: 50px;
+    width: 400Px;
+    height: 400px;
+    border: 0px solid black;
+}
+
+.tttCell{
+    float: left;
+    border: 2px solid black;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 4px;
+    width: 30%;
+    height: 30%;
+}
+.tttCell:hover{
+    background-color: #9999ff;
+}
+
+.cellSelcted{
+    float: left;
+    border: 2px solid black;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 4px;
+    width: 30%;
+    height: 30%;
+    background-color: #00cc66;
+}
+.winnerCell{
+    float: left;
+    border: 2px solid black;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 4px;
+    width: 30%;
+    height: 30%;
+    background-color: #ff9999;
+    text-decoration:blink;
+}
+
+.playersMove{
+    border: 5px solid black;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    margin: 10px;
+    margin-top: 20px;
+    width: 600px;
+    height: 50px;
+    background-color: #cccc00;
+    font-size: 35px;
+    font-weight: bold;
+}
