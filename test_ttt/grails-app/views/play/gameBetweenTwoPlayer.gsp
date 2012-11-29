@@ -82,7 +82,7 @@
         )</div>
 
         <div class="tttMainView">
-            <g:each in="${0..8}" var="no">
+            <g:each in="${1..9}" var="no">
                 %{--<g:link action="updatePlayerMove" params="[cell:no,cUser:cUsername,gameId:game.id]">--}%
                 <div class="tttCell" id="cell${no}" onclick="updateCell(${no})">
                     <g:if test="${game.userCreatedMoves}" >
