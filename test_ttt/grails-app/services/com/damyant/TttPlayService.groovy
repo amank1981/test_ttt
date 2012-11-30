@@ -63,12 +63,11 @@ class TttPlayService {
             looser=User.findById(game.userCreated.id)
             game.gameWinner=game.secondPlayer
             game.gameStatus='R'
-        }else if(game.userCreatedMoves.mov5 && game.secondPlayerMoves.mov5){
+        }else if(game.userCreatedMoves.mov5 || game.secondPlayerMoves.mov5){
             game.gameStatus='D'
             winner=User.findById(game.secondPlayer.id)
             looser=User.findById(game.userCreated.id)
         }
-
 
         if(game.gameStatus=='R'){
          winner.gamesWon=winner.gamesWon+1
