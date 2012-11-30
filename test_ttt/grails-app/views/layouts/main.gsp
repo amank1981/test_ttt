@@ -33,7 +33,7 @@
     </script>
 
     <g:layoutHead/>
-    <r:layoutResources />
+    %{--<r:layoutResources />--}%
 </head>
 
 <body>
@@ -53,7 +53,7 @@
 <!--Popup div ends here -->
 <div align="center">
     <g:layoutBody/>
-    <r:layoutResources />
+   %{-- <r:layoutResources />--}%
 </div>
 
 </body>
