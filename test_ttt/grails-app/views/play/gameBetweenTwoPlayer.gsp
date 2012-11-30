@@ -141,7 +141,7 @@
         </g:if>
         <g:elseif test="${!game.gameRequest}">
             <div class="playersMove" id="playersMove">
-                Your request Yet not accepted
+                Your request not yet accepted
             </div>
         </g:elseif>
         <g:else>
