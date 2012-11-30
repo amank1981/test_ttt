@@ -52,16 +52,42 @@ class TttPlayService {
         println player1Moves
         println player2Moves
         println"---------------------"
+        User winner,looser
         if(checkStatus(player1Moves)){
+            winner=User.findById(game.userCreated.id)
+            looser=User.findById(game.secondPlayer.id)
             game.gameWinner=game.userCreated
             game.gameStatus='R'
         }else if(checkStatus(player2Moves)){
+            winner=User.findById(game.secondPlayer.id)
+            looser=User.findById(game.userCreated.id)
             game.gameWinner=game.secondPlayer
             game.gameStatus='R'
         }else if(game.userCreatedMoves.mov5 && game.secondPlayerMoves.mov5){
             game.gameStatus='D'
+            winner=User.findById(game.secondPlayer.id)
+            looser=User.findById(game.userCreated.id)
+        }
+
+
+        if(game.gameStatus=='R'){
+         winner.gamesWon=winner.gamesWon+1
+         looser.gamesLoss=looser.gamesLoss+1
+        }else if(game.gameStatus=='D') {
+            winner.gamesD=winner.gamesD+1
+            looser.gamesD=looser.gamesD+1
         }
         game.save(flush: true)
+        if(game.gameStatus){
+            winner.gamesPlayed=winner.gamesPlayed+1
+            looser.gamesPlayed=looser.gamesPlayed+1
+            winner.save()
+            looser.save()
+        }
+    }
+
+    def updateResult(winner,looser,gameStatus){
+
     }
 
     def checkStatus(dataArray){

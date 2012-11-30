@@ -21,7 +21,8 @@
        </div>
          <br><br>
           <div>
-              <input type="submit" value="Play">
+              <input type="submit" value="Play" style="width: 100px;font-size: 16px;">
+              <input type="button" value="Cancel" style="width: 100px;font-size: 16px;" onclick="disablePopup();">
           </div>
       </g:form>
   </body>

@@ -7,6 +7,7 @@
     <meta name="layout" content="main"/>
     <g:javascript src='popup.js'/>
     <script type="text/javascript">
+
         function validateaform(thisForm){
             if(thisForm.otherPlayer.value==''){
                 alert("please select 1 player!");
@@ -15,11 +16,13 @@
             return true;
         }
         window.onload = function () {
-            setTimeout(reloadPage, 10000);
+            setTimeout(reloadPlayIndexPage,5000);
         };
 
-    function reloadPage(){
-        window.location.href=window.location.href;
+    function reloadPlayIndexPage(){
+        if(!popupStatus){window.location.href=window.location.href;}
+
+        setTimeout(reloadPlayIndexPage,5000);
     }
     </script>
 </head>
@@ -43,13 +46,19 @@
                 Log Out
             </div>
             </g:link>
+            %{--<g:link action="gameInAction" params="['player1':player.username]" >
+                <div class="leftPaneMenu">
+                    Play with Computer
+                </div>
+            </g:link>--}%
             <div class="leftPaneMenu" onclick="openPopup('Multi Player', '${createLink(controller:'play', action: 'multiPlayerGames' )}', '300', '150');">
                 Play with other Player
             </div>
-
-            <div class="leftPaneMenu" %{--onclick="openPopup('View Statistics', './play/multiPlayerGames', '300', '100');"--}%>
+            <g:link controller="player" action="playerStatistic">
+            <div class="leftPaneMenu">
                 View Statistics
             </div>
+            </g:link>
         </div>
 
         <div class="rightPane">

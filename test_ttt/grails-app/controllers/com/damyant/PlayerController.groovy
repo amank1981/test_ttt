@@ -3,7 +3,7 @@ package com.damyant
 class PlayerController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
-
+     def springSecurityService
 
     def create = {
         def playerInstance = new User()
@@ -33,5 +33,9 @@ class PlayerController {
         }
     }
 
+    def playerStatistic={
+        def player=User.findByUsername(springSecurityService.currentUser.username)
+        [player:player]
+    }
 
 }

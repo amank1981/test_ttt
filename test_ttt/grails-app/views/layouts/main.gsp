@@ -15,7 +15,7 @@
     <script type="text/javascript">
         var BASE = '${grailsApplication.config.grails.serverURL}';
         jQuery(function($) {
-// CONTROLLING EVENTS IN jQuery
+           // CONTROLLING EVENTS IN jQuery
             $(document).ready(function() {
                 // CLOSING POPUP
                 // Click the x event!
@@ -33,6 +33,7 @@
     </script>
 
     <g:layoutHead/>
+    <r:layoutResources />
 </head>
 
 <body>
@@ -52,6 +53,7 @@
 <!--Popup div ends here -->
 <div align="center">
     <g:layoutBody/>
+    <r:layoutResources />
 </div>
 
 </body>
