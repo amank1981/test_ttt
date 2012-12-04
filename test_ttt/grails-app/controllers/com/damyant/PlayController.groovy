@@ -81,7 +81,6 @@ class PlayController {
             //game=GameTtt.get(params.gameId)
         }
         else{
-
             game=tttPlayService.createNewGame(cUsername,params.otherPlayer)
         }
 
